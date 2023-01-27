@@ -1,6 +1,6 @@
 # 🖼️ JavaScript - Anime Image Gallery
 
-![Image Gallery Preview](./assets/images/image-gallery-preview.jpg)
+![Image Gallery Preview](./docs/assets/images/image-gallery-preview.jpg)
 
 Welcome to the Anime Image Gallery! This project aim was to build a fully operative image gallery just by using **HTML, CSS (Sass) and JavaScript**.
 
