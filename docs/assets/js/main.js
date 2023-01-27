@@ -1,0 +1,1 @@
+"use strict";const panels=document.querySelectorAll(".panel");function handleToggleOpen(){this.classList.toggle("open")}function handleToggleActive(e){e.propertyName.includes("flex")&&this.classList.toggle("open-active")}panels.forEach(e=>{e.addEventListener("click",handleToggleOpen)}),panels.forEach(e=>{e.addEventListener("transitionend",handleToggleActive)});

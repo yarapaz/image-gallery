@@ -1,0 +1,79 @@
+.panels {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel {
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,
+    sans-serif;
+  font-size: 50px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  flex: 1; //This makes every panel to fill the empty space on screen
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+}
+
+//flex Items (all the paragraphs inside each panel)
+.panel > * {
+  margin: 0;
+  width: 100%;
+  flex: 1 0 auto;
+  display: flex; //every p be flex to place its content in the center
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+}
+
+//Moving panels in and out of the screen
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.panel.open {
+  flex: 5;
+  font-size: 40px;
+}
+
+.panel1 {
+  background-image: url('../../assets/images/KamadoNezuko.jpg');
+  color: rgb(137, 23, 183);
+}
+.panel2 {
+  background-image: url('../../assets/images/KamadoTanjiro.jpg');
+  color: rgb(201, 30, 11);
+  text-shadow: 2px 2px 3px rgb(8, 8, 8);
+}
+.panel3 {
+  background-image: url('../../assets/images/AgatsumaZenitsu.jpg');
+  color: rgb(228, 201, 26);
+  text-shadow: 2px 2px 3px rgb(8, 8, 8);
+}
+.panel4 {
+  background-image: url('../../assets/images/HashibiraInosuke.jpg');
+  color: rgb(25, 129, 225);
+  text-shadow: 2px 2px 3px rgb(248, 243, 243);
+}
+.panel5 {
+  background-image: url('../../assets/images/TomiokaGiju.png');
+  color: rgb(247, 242, 241);
+  text-shadow: 2px 2px 3px rgb(8, 8, 8);
+}
